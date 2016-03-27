@@ -6,4 +6,5 @@ In the case just define `<goRoot>` in plug-in configuration
 ```
 <goRoot>some/folder/where/go</goRoot>
 ````
-and plug-in will be using already installed distributive
+and plug-in will be using already installed distributive   
+Especially such situation will be for platform which don't have .zip or .tar.gz distibutive on the GoLang server, because the plug-in knows how to work only with zip and tar packages.
