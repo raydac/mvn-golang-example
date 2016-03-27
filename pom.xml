@@ -43,6 +43,7 @@
               </goals>
               <configuration>
                 <name>${target.name}</name>
+                <!--<goRoot>${env.GOROOT}</goRoot>-->
               </configuration>
             </execution>
           </executions>
