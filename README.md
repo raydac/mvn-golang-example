@@ -1,6 +1,9 @@
 Example how to build a GoLang application with Maven and [the mvn-golang-wrapper plugin](https://github.com/raydac/mvn-golang).   
 Just clone the project and build with `mvn package`
 
+# For MacOS users!
+Unfortunately GoLang SDK for MacOS is not presented in zip or tar.gz formats and the plug-in is not able to unpack MacOS GoLang distributive. In the case you should use manually downloaded and preinstalled GoLang SDK and define path to it through `<goRoot>` as described in the next item.
+
 # What to do if I want to use already installed SDK?
 In the case just define `<goRoot>` in plug-in configuration
 ```
