@@ -13,7 +13,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <target.name>helloworld</target.name>
-        <go.sdk.name></go.sdk.name>
+        <go.sdk.url></go.sdk.url>
     </properties>
 
     <profiles>
@@ -36,7 +36,7 @@
           </os>
         </activation>
         <properties>
-          <go.sdk.name>go1.6.darwin-amd64.tar.gz</go.sdk.name>
+          <go.sdk.url>https://storage.googleapis.com/golang/go1.6.darwin-amd64.tar.gz</go.sdk.url>
         </properties>
       </profile>
     </profiles>
@@ -60,7 +60,7 @@
           </executions>
           <configuration>
             <!--<goRoot>${env.GOROOT}</goRoot>-->
-            <goSdkName>${go.sdk.name}</goSdkName>
+            <sdkDownloadUrl>${go.sdk.url}</sdkDownloadUrl>
             <goVersion>1.6</goVersion>
           </configuration>
         </plugin>
