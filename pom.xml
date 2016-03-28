@@ -13,6 +13,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <target.name>helloworld</target.name>
+        <go.sdk.name></go.sdk.name>
     </properties>
 
     <profiles>
@@ -25,6 +26,17 @@
         </activation>
         <properties>
           <target.name>helloworld.exe</target.name>
+        </properties>
+      </profile>
+      <profile> 
+        <id>macos</id>
+        <activation>
+          <os>
+            <family>mac</family>
+          </os>
+        </activation>
+        <properties>
+          <go.sdk.name>go1.6.darwin-amd64.tar.gz</go.sdk.name>
         </properties>
       </profile>
     </profiles>
@@ -43,11 +55,12 @@
               </goals>
               <configuration>
                 <name>${target.name}</name>
-                <!--<goRoot>${env.GOROOT}</goRoot>-->
               </configuration>
             </execution>
           </executions>
           <configuration>
+            <!--<goRoot>${env.GOROOT}</goRoot>-->
+            <goSdkName>${go.sdk.name}</goSdkName>
             <goVersion>1.6</goVersion>
           </configuration>
         </plugin>
