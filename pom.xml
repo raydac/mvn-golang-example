@@ -13,7 +13,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <target.name>helloworld</target.name>
-        <go.sdk.url></go.sdk.url>
     </properties>
 
     <profiles>
@@ -28,17 +27,6 @@
           <target.name>helloworld.exe</target.name>
         </properties>
       </profile>
-      <profile> 
-        <id>macos</id>
-        <activation>
-          <os>
-            <family>mac</family>
-          </os>
-        </activation>
-        <properties>
-          <go.sdk.url>https://storage.googleapis.com/golang/go1.6.darwin-amd64.tar.gz</go.sdk.url>
-        </properties>
-      </profile>
     </profiles>
 
     <build>
@@ -46,7 +34,7 @@
         <plugin>
           <groupId>com.igormaznitsa</groupId>
           <artifactId>mvn-golang-wrapper</artifactId>
-          <version>1.0.0</version>
+          <version>1.1.0</version>
           <executions>
             <execution>
               <id>golang-build</id>
@@ -54,13 +42,12 @@
                 <goal>build</goal>
               </goals>
               <configuration>
-                <name>${target.name}</name>
+                <resultName>${target.name}</resultName>
               </configuration>
             </execution>
           </executions>
           <configuration>
             <!--<goRoot>${env.GOROOT}</goRoot>-->
-            <sdkDownloadUrl>${go.sdk.url}</sdkDownloadUrl>
             <goVersion>1.6</goVersion>
           </configuration>
         </plugin>
