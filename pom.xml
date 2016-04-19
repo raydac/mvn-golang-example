@@ -4,7 +4,7 @@
     <groupId>com.igormaznitsa</groupId>
     <artifactId>mvn-golang-example-hello-world</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>mvn-golang</packaging>
 
     <name>GoLangHelloWorld</name>
     <description>Just a small example project to build a GoLang module with mvn-golang-wrapper</description>
@@ -15,37 +15,15 @@
         <target.name>helloworld</target.name>
     </properties>
 
-    <profiles>
-      <profile> 
-        <id>windows</id>
-        <activation>
-          <os>
-            <family>windows</family>
-          </os>
-        </activation>
-        <properties>
-          <target.name>helloworld.exe</target.name>
-        </properties>
-      </profile>
-    </profiles>
-
     <build>
+      <sourceDirectory>${basedir}${file.separator}src</sourceDirectory>
+      <directory>${basedir}${file.separator}bin</directory>
       <plugins>
         <plugin>
           <groupId>com.igormaznitsa</groupId>
           <artifactId>mvn-golang-wrapper</artifactId>
-          <version>1.1.0</version>
-          <executions>
-            <execution>
-              <id>golang-build</id>
-              <goals>
-                <goal>build</goal>
-              </goals>
-              <configuration>
-                <resultName>${target.name}</resultName>
-              </configuration>
-            </execution>
-          </executions>
+          <version>2.0.0</version>
+          <extensions>true</extensions>
           <configuration>
             <!--<goRoot>${env.GOROOT}</goRoot>-->
             <goVersion>1.6</goVersion>
