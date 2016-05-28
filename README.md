@@ -4,7 +4,7 @@ Just clone the project and build with `mvn package`
 # Create from archetype
 It is possible to create "Hello World" project just from maven archetype
 ```
-mvn archetype:generate -B -DarchetypeGroupId=com.igormaznitsa -DarchetypeArtifactId=mvn-golang-hello -DarchetypeVersion=2.0.0 -DgroupId=com.go.test -DartifactId=gohello -Dversion=1.0-SNAPSHOT
+mvn archetype:generate -B -DarchetypeGroupId=com.igormaznitsa -DarchetypeArtifactId=mvn-golang-hello -DarchetypeVersion=2.1.0 -DgroupId=com.go.test -DartifactId=gohello -Dversion=1.0-SNAPSHOT
 ```
 # What to do if I want to use already installed SDK?
 In the case just define `<goRoot>` in plug-in configuration
