@@ -18,6 +18,7 @@
   <build>
     <sourceDirectory>${basedir}${file.separator}src</sourceDirectory>
     <directory>${basedir}${file.separator}bin/some</directory>
+    <defaultGoal>clean package</defaultGoal>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -37,11 +38,11 @@
       <plugin>
         <groupId>com.igormaznitsa</groupId>
         <artifactId>mvn-golang-wrapper</artifactId>
-        <version>2.1.5 </version>
+        <version>2.1.6 </version>
         <extensions>true</extensions>
         <configuration>
           <!--<goRoot>${env.GOROOT}</goRoot>-->
-          <goVersion>1.8.3</goVersion>
+          <goVersion>1.9</goVersion>
         </configuration>
 	<executions>
 	    <execution>
