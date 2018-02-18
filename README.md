@@ -1,14 +1,18 @@
 Example how to build a GoLang application with Maven and [the mvn-golang-wrapper plugin](https://github.com/raydac/mvn-golang).   
 Just clone the project and build with `mvn package`
 
+# What is Maven?
+Maven is very popular tool in Java world allows to build projects and the main power of maven in its central repository which allows to load dependencies without tricks.   
+If you have not maven installed on your computer, you can visit its home page and [read instructions how to install](https://maven.apache.org)
+
 # Create from archetype
 It is possible to create "Hello World" project just from maven archetype
 ```
-mvn archetype:generate -B -DarchetypeGroupId=com.igormaznitsa -DarchetypeArtifactId=mvn-golang-hello -DarchetypeVersion=2.1.6 -DgroupId=com.go.test -DartifactId=gohello -Dversion=1.0-SNAPSHOT
+mvn archetype:generate -B -DarchetypeGroupId=com.igormaznitsa -DarchetypeArtifactId=mvn-golang-hello -DarchetypeVersion=2.1.7 -DgroupId=com.go.test -DartifactId=gohello -Dversion=1.0-SNAPSHOT
 ```
 if you want to develop multi-module project sharing some sources, you can use muti-module archetype
 ```
-mvn archetype:generate -B -DarchetypeGroupId=com.igormaznitsa -DarchetypeArtifactId=mvn-golang-hello-multi -DarchetypeVersion=2.1.6 -DgroupId=com.go.test -DartifactId=gohello-multi -Dversion=1.0-SNAPSHOT
+mvn archetype:generate -B -DarchetypeGroupId=com.igormaznitsa -DarchetypeArtifactId=mvn-golang-hello-multi -DarchetypeVersion=2.1.7 -DgroupId=com.go.test -DartifactId=gohello-multi -Dversion=1.0-SNAPSHOT
 ```
 
 # What to do if I want to use already installed SDK?
