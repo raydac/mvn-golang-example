@@ -42,6 +42,9 @@
         <artifactId>mvn-golang-wrapper</artifactId>
         <version>${mvn.golang.wrapper.version}</version>
         <extensions>true</extensions>
+        <configuration>
+          <disableSSLcheck>true</disableSSLcheck>
+        </configuration>
       </plugin>
     </plugins>
   </build>
