@@ -12,8 +12,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <mvn.golang.go.version>1.10.2</mvn.golang.go.version>
-    <mvn.golang.wrapper.version>2.2.0</mvn.golang.wrapper.version>
+    <mvn.golang.go.version>1.12</mvn.golang.go.version>
+    <mvn.golang.wrapper.version>2.3.0</mvn.golang.wrapper.version>
+    <mvn.golang.deisable.ssl.check>true</mvn.golang.deisable.ssl.check>
     <target.name>helloworld</target.name>
   </properties>
 
@@ -42,9 +43,6 @@
         <artifactId>mvn-golang-wrapper</artifactId>
         <version>${mvn.golang.wrapper.version}</version>
         <extensions>true</extensions>
-        <configuration>
-          <disableSSLcheck>true</disableSSLcheck>
-        </configuration>
       </plugin>
     </plugins>
   </build>
