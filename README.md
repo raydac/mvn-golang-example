@@ -12,7 +12,7 @@ mvn archetype:generate -B -DarchetypeGroupId=com.igormaznitsa -DarchetypeArtifac
 ```
 if you want to develop multi-module project sharing some sources, you can use muti-module archetype
 ```
-mvn archetype:generate -B -DarchetypeGroupId=com.igormaznitsa -DarchetypeArtifactId=mvn-golang-hello-multi -DarchetypeVersion=2.3.0 -DgroupId=com.go.test -DartifactId=gohello-multi -Dversion=1.0-SNAPSHOT
+mvn archetype:generate -B -DarchetypeGroupId=com.igormaznitsa -DarchetypeArtifactId=mvn-golang-hello-multi -DarchetypeVersion=2.3.1 -DgroupId=com.go.test -DartifactId=gohello-multi -Dversion=1.0-SNAPSHOT
 ```
 
 # What to do if I want to use already installed SDK?
