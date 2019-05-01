@@ -3,7 +3,15 @@ Just clone the project and build with `mvn package`
 
 # What is Maven?
 Maven is very popular tool in Java world allows to build projects and the main power of maven in its central repository which allows to load dependencies without tricks.   
-If you have not maven installed on your computer, you can visit its home page and [read instructions how to install](https://maven.apache.org)
+If you have not maven installed on your computer, you can visit its home page and [read instructions how to install](https://maven.apache.org). Also the project contains `mvnw` wrapper which can download maven automatically.
+
+# Build and start
+If you don't want use archetypes then:
+- (optional step) [download and install JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
+- just clone the repository with `git clone https://github.com/raydac/mvn-golang-example.git`
+- go to the cloned project folder
+- build the project with `mvn` command if you have installed [maven](https://maven.apache.org/index.html) or with maven wrapper `mvnw` which will download maven automatically
+- go to the generated `bin` folder and execute result file named `binResult`
 
 # Create from archetype
 It is possible to create "Hello World" project just from maven archetype
@@ -14,14 +22,6 @@ if you want to develop multi-module project sharing some sources, you can use mu
 ```
 mvn archetype:generate -B -DarchetypeGroupId=com.igormaznitsa -DarchetypeArtifactId=mvn-golang-hello-multi -DarchetypeVersion=2.3.1 -DgroupId=com.go.test -DartifactId=gohello-multi -Dversion=1.0-SNAPSHOT
 ```
-
-# Build and start
-If you don't want use archetypes then:
-- (optional step) [download and install JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
-- just clone the repository with `git clone https://github.com/raydac/mvn-golang-example.git`
-- go to the cloned project folder
-- build the project with `mvn` command
-- go to the generated `bin` folder and execute result file named `binResult`
 
 
 # What to do if I want to use pre-installed Golang SDK?
