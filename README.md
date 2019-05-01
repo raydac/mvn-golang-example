@@ -6,7 +6,7 @@ Maven is very popular tool in Java world allows to build projects and the main p
 If you have not maven installed on your computer, you can visit its home page and [read instructions how to install](https://maven.apache.org). Also the project contains `mvnw` wrapper which can download maven automatically.
 
 # Build and start
-If you don't want use archetypes then:
+To get compiled example Golang application you should make listed steps:
 - (optional step) [download and install JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
 - just clone the repository with `git clone https://github.com/raydac/mvn-golang-example.git`
 - go to the cloned project folder
