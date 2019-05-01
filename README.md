@@ -14,7 +14,7 @@ To get compiled example Golang application you should make listed steps:
 - go to the generated `bin` folder and execute result file named `binResult`
 
 # Screencast under Ubuntu
-![Screencast](./assets/mvn-golang-example-screencast.gif)
+![Screencast](assets/go-mvn-example-screencast.gif)
 
 # Create from archetype
 It is possible to create "Hello World" project just from maven archetype
