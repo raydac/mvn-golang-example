@@ -15,18 +15,34 @@
     <mvn.golang.go.version>1.12.4</mvn.golang.go.version>
     <mvn.golang.wrapper.version>2.3.1</mvn.golang.wrapper.version>
     <mvn.golang.deisable.ssl.check>true</mvn.golang.deisable.ssl.check>
-    <target.name>helloworld</target.name>
+    <target.name>binResult</target.name>
+    <final.extension></final.extension>
   </properties>
+
+  <profiles>
+    <profile>
+      <id>when-windows</id>
+      <activation>
+        <os>
+          <family>windows</family>
+        </os>
+      </activation>
+      <properties>
+        <final.extension>.exe</final.extension>
+      </properties>
+    </profile>
+  </profiles>
 
   <build>
     <sourceDirectory>${basedir}${file.separator}src</sourceDirectory>
-    <directory>${basedir}${file.separator}bin/some</directory>
+    <directory>${basedir}${file.separator}bin</directory>
     <defaultGoal>clean package</defaultGoal>
+    <finalName>${target.name}${final.extension}</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-clean-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>3.1.0</version>
         <configuration>
           <followSymLinks>false</followSymLinks>
           <excludeDefaultDirectories>true</excludeDefaultDirectories>

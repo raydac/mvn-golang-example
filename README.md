@@ -15,7 +15,16 @@ if you want to develop multi-module project sharing some sources, you can use mu
 mvn archetype:generate -B -DarchetypeGroupId=com.igormaznitsa -DarchetypeArtifactId=mvn-golang-hello-multi -DarchetypeVersion=2.3.1 -DgroupId=com.go.test -DartifactId=gohello-multi -Dversion=1.0-SNAPSHOT
 ```
 
-# What to do if I want to use already installed SDK?
+# Build and start
+If you don't want use archetypes then:
+- (optional step) [download and install JDK](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
+- just clone the repository with `git clone https://github.com/raydac/mvn-golang-example.git`
+- go to the cloned project folder
+- build the project with `mvn` command
+- go to the generated `bin` folder and execute result file named `binResult`
+
+
+# What to do if I want to use pre-installed Golang SDK?
 In the case just define `<goRoot>` in plug-in configuration
 ```
 <goRoot>some/folder/where/go</goRoot>
