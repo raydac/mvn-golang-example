@@ -13,7 +13,7 @@ To get compiled example Golang application you should make listed steps:
 - build the project with `mvn` command if you have installed [maven](https://maven.apache.org/index.html) or with maven wrapper `mvnw` which will download maven automatically
 - go to the generated `bin` folder and execute result file named `binResult`
 
-# Screencast under Ubuntu
+# Screencast
 ![Screencast](assets/go-mvn-example-screencast.gif)
 
 # Create from archetype
