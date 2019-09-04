@@ -12,8 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <mvn.golang.go.version>1.12.4</mvn.golang.go.version>
-    <mvn.golang.wrapper.version>2.3.1</mvn.golang.wrapper.version>
+    <mvn.golang.go.version>1.13</mvn.golang.go.version>
+    <mvn.golang.wrapper.version>2.3.3</mvn.golang.wrapper.version>
     <mvn.golang.disable.ssl.check>true</mvn.golang.disable.ssl.check>
     <target.name>binResult</target.name>
     <final.extension></final.extension>
