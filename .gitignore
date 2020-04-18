@@ -10,3 +10,5 @@ buildNumber.properties
 /bin/
 /.idea/
 /mvn-golang-example-hello-world.iml
+.project
+.settings
